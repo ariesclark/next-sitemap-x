@@ -197,6 +197,7 @@ export interface IRoutesManifest {
     locales: string[]
     defaultLocale: string
   }
+  staticRoutes?: { page: string }[]
 }
 
 export interface IExportMarker {
