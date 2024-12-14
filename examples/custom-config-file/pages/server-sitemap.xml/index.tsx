@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { getServerSideSitemapLegacy } from 'next-sitemap'
+import { getServerSideSitemapLegacy } from 'next-sitemap-x'
 import { GetServerSideProps } from 'next'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {

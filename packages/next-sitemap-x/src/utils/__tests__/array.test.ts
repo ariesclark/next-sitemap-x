@@ -5,7 +5,7 @@ import {
   toChunks,
 } from '../array.js'
 
-describe('next-sitemap/array', () => {
+describe('next-sitemap-x/array', () => {
   test('toChunks', () => {
     const inputArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     const chunkSize = 3

@@ -1,24 +1,24 @@
 ---
 title: Installation
-description: How to setup next-sitemap for your application.
+description: How to setup next-sitemap-x for your application.
 ---
 
 ### Step 1: Installing the package
 
-Install next-sitemap via yarn with the following command
+Install next-sitemap-x via yarn with the following command
 
 ```bash
-yarn add next-sitemap
+pnpm add next-sitemap-x
 ```
 
-### Step 2: Creating `next-sitemap.config.js`
+### Step 2: Creating `next-sitemap-x.config.js`
 
-Create your `next-sitemap.config.js` file under your project root.
+Create your `next-sitemap-x.config.js` file under your project root.
 
-> ✅ `next-sitemap` will load environment variables from `.env` files by default.
+> ✅ `next-sitemap-x` will load environment variables from `.env` files by default.
 
 ```javascript
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://example.com',
   generateRobotsTxt: true, // (optional)
@@ -28,23 +28,23 @@ module.exports = {
 
 ### Step 3: Building sitemaps
 
-Add next-sitemap as your postbuild script
+Add next-sitemap-x as your postbuild script
 
 ```json
 {
   "build": "next build",
-  "postbuild": "next-sitemap"
+  "postbuild": "next-sitemap-x"
 }
 ```
 
 ### Custom config file
 
-You can also use a custom config file instead of `next-sitemap.config.js`. Just pass `--config <your-config-file>.js` to build command (Example: [custom-config-file](https://github.com/iamvishnusankar/next-sitemap/tree/master/examples/custom-config-file))
+You can also use a custom config file instead of `next-sitemap-x.config.js`. Just pass `--config <your-config-file>.js` to build command (Example: [custom-config-file](https://github.com/ariesclark/next-sitemap-x/tree/master/examples/custom-config-file))
 
 ```json
 {
   "build": "next build",
-  "postbuild": "next-sitemap --config awesome.config.js"
+  "postbuild": "next-sitemap-x --config awesome.config.js"
 }
 ```
 

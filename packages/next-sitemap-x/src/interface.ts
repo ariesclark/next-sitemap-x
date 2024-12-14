@@ -135,7 +135,7 @@ export interface IConfig {
 
   /**
    * Array of relative paths (wildcard pattern supported) to exclude from listing on sitemap.xml or sitemap-*.xml.
-   * Apart from this option next-sitemap also offers a custom transform option which could be used to exclude urls that match specific patterns
+   * Apart from this option next-sitemap-x also offers a custom transform option which could be used to exclude urls that match specific patterns
    * @example ['/page-0', '/page-*', '/private/*']
    */
   exclude?: string[] | (() => Promise<string[]>)
@@ -144,7 +144,7 @@ export interface IConfig {
 
   /**
    * A transformation function, which runs for each relative-path in the sitemap. Returning null value from the transformation function will result in the exclusion of that specific path from the generated sitemap list.
-   * @link https://github.com/iamvishnusankar/next-sitemap#custom-transformation-function
+   * @link https://github.com/ariesclark/next-sitemap-x#custom-transformation-function
    */
   transform?: (
     config: IConfig,
@@ -153,7 +153,7 @@ export interface IConfig {
 
   /**
    * A function that returns a list of additional paths to be added to the generated sitemap list.
-   * @link https://github.com/iamvishnusankar/next-sitemap#additional-paths-function
+   * @link https://github.com/ariesclark/next-sitemap-x#additional-paths-function
    */
   additionalPaths?: (
     config: AdditionalPathsConfig,
@@ -166,7 +166,7 @@ export interface IConfig {
 
   /**
    * Boolean to enable/disable index sitemap generation
-   * If enabled next-sitemap will generate sitemap-*.xml and sitemap.xml (index sitemap)
+   * If enabled next-sitemap-x will generate sitemap-*.xml and sitemap.xml (index sitemap)
    * @default true
    */
   generateIndexSitemap?: boolean

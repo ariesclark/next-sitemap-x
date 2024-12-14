@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="w-full fixed z-40 ">
       <div className="flex flex-row items-center md:justify-between transition duration-500 bg-neutral-200/75 backdrop-blur-sm  border-b border-slate-300 dark:border-slate-700 dark:bg-slate-900/75 shadow-sm pr-[2vw] lg:px-[4vw] 2xl:px-[10vw]">
         <div className="flex-row gap-7 hidden lg:flex ">
-          <MenuItem onClick={() => router.push('/')} label="next-sitemap" />
+          <MenuItem onClick={() => router.push('/')} label="next-sitemap-x" />
           <MenuItem
             onClick={() => router.push('/docs')}
             label="Documentation"
@@ -31,7 +31,7 @@ const Navbar = () => {
           className="lg:hidden flex flex-row items-center  ml-3 cursor-pointer relative"
         >
           <p className="text-black text-base w-[120px] dark:text-neutral-300 font-satoshiBold">
-            next-sitemap
+            next-sitemap-x
           </p>
           <Icons.ChevronRight
             className={`w-4 ml-1 mt-1 text-black dark:text-neutral-300 transition ${

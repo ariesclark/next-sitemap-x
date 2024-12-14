@@ -57,7 +57,7 @@ export const getConfigFilePath = async () => {
   const args = minimist(process.argv.slice(2))
 
   // Config file path
-  const configPath = getPath(args.config || 'next-sitemap.config.js')
+  const configPath = getPath(args.config || 'next-sitemap-x.config.js')
 
   // Check file stat
   return fs

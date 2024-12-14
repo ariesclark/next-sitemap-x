@@ -99,7 +99,7 @@ export async function GET(req: Request) {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div tw="flex ml-2">github.com/iamvishnusankar/next-sitemap</div>
+              <div tw="flex ml-2">github.com/ariesclark/next-sitemap-x</div>
             </div>
           </div>
         </div>

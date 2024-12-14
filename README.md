@@ -1,12 +1,12 @@
-[![BANNER](./assets/banner.svg)](https://vercel.com/?utm_source=next-sitemap&utm_campaign=oss)
+[![BANNER](./assets/banner.svg)](https://vercel.com/?utm_source=next-sitemap-x&utm_campaign=oss)
 
 <div align="center">
 
-[![Build Status](https://dev.azure.com/iamvishnusankar/Public/_apis/build/status/iamvishnusankar.next-sitemap?branchName=master)](https://dev.azure.com/iamvishnusankar/Public/_build/latest?definitionId=126&branchName=master)
-[![npm version](https://badge.fury.io/js/next-sitemap.svg)](https://badge.fury.io/js/next-sitemap)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/iamvishnusankar/next-sitemap/pulls)
-<a href="https://twitter.com/intent/follow?screen_name=iamvishnusankar">
-<img src="https://img.shields.io/twitter/follow/iamvishnusankar?style=social&logo=twitter" alt="follow on Twitter">
+[![Build Status](https://dev.azure.com/ariesclark/Public/_apis/build/status/ariesclark.next-sitemap-x?branchName=master)](https://dev.azure.com/ariesclark/Public/_build/latest?definitionId=126&branchName=master)
+[![npm version](https://badge.fury.io/js/next-sitemap-x.svg)](https://badge.fury.io/js/next-sitemap-x)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ariesclark/next-sitemap-x/pulls)
+<a href="https://twitter.com/intent/follow?screen_name=ariesclark">
+<img src="https://img.shields.io/twitter/follow/ariesclark?style=social&logo=twitter" alt="follow on Twitter">
 </a>
 
 </div>
@@ -32,17 +32,17 @@
 ### Installation
 
 ```shell
-yarn add next-sitemap
+pnpm add next-sitemap-x
 ```
 
 ### Create config file
 
-`next-sitemap` requires a basic config file (`next-sitemap.config.js`) under your project root
+`next-sitemap-x` requires a basic config file (`next-sitemap-x.config.js`) under your project root
 
-> ✅ `next-sitemap` will load environment variables from `.env` files by default.
+> ✅ `next-sitemap-x` will load environment variables from `.env` files by default.
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || 'https://example.com',
   generateRobotsTxt: true, // (optional)
@@ -52,23 +52,23 @@ module.exports = {
 
 ### Building sitemaps
 
-Add next-sitemap as your postbuild script
+Add next-sitemap-x as your postbuild script
 
 ```json
 {
   "build": "next build",
-  "postbuild": "next-sitemap"
+  "postbuild": "next-sitemap-x"
 }
 ```
 
 #### Custom config file
 
-You can also use a custom config file instead of `next-sitemap.config.js`. Just pass `--config <your-config-file>.js` to build command (Example: [custom-config-file](https://github.com/iamvishnusankar/next-sitemap/tree/master/examples/custom-config-file))
+You can also use a custom config file instead of `next-sitemap-x.config.js`. Just pass `--config <your-config-file>.js` to build command (Example: [custom-config-file](https://github.com/ariesclark/next-sitemap-x/tree/master/examples/custom-config-file))
 
 ```json
 {
   "build": "next build",
-  "postbuild": "next-sitemap --config awesome.config.js"
+  "postbuild": "next-sitemap-x --config awesome.config.js"
 }
 ```
 
@@ -83,16 +83,16 @@ enable-pre-post-scripts=true
 
 ## Index sitemaps (Optional)
 
-📣 From `next-sitemap` v2.x onwards, `sitemap.xml` will be [Index Sitemap](https://developers.google.com/search/docs/advanced/sitemaps/large-sitemaps). It will contain urls of all other generated sitemap endpoints.
+📣 From `next-sitemap-x` v2.x onwards, `sitemap.xml` will be [Index Sitemap](https://developers.google.com/search/docs/advanced/sitemaps/large-sitemaps). It will contain urls of all other generated sitemap endpoints.
 
-Index sitemap generation can be turned off by setting `generateIndexSitemap: false` in next-sitemap config file. (This is useful for small/hobby sites which does not require an index sitemap) (Example: [no-index-sitemaps](https://github.com/iamvishnusankar/next-sitemap/tree/master/examples/no-index-sitemaps))
+Index sitemap generation can be turned off by setting `generateIndexSitemap: false` in next-sitemap-x config file. (This is useful for small/hobby sites which does not require an index sitemap) (Example: [no-index-sitemaps](https://github.com/ariesclark/next-sitemap-x/tree/master/examples/no-index-sitemaps))
 
 ## Splitting large sitemap into multiple files
 
-Define the `sitemapSize` property in `next-sitemap.config.js` to split large sitemap into multiple files.
+Define the `sitemapSize` property in `next-sitemap-x.config.js` to split large sitemap into multiple files.
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: 'https://example.com',
   generateRobotsTxt: true,
@@ -100,7 +100,7 @@ module.exports = {
 }
 ```
 
-Above is the minimal configuration to split a large sitemap. When the number of URLs in a sitemap is more than 7000, `next-sitemap` will create sitemap (e.g. sitemap-0.xml, sitemap-1.xml) and index (e.g. sitemap.xml) files.
+Above is the minimal configuration to split a large sitemap. When the number of URLs in a sitemap is more than 7000, `next-sitemap-x` will create sitemap (e.g. sitemap-0.xml, sitemap-1.xml) and index (e.g. sitemap.xml) files.
 
 ## Configuration Options
 
@@ -114,15 +114,15 @@ Above is the minimal configuration to split a large sitemap. When the number of 
 | alternateRefs (optional)                            | Denote multi-language support by unique URL. Default `[]`                                                                                                                                                                                                                                                                                                                                                                            | AlternateRef[]                                                                                                           |
 | sitemapSize(optional)                               | Split large sitemap into multiple files by specifying sitemap size. Default `5000`                                                                                                                                                                                                                                                                                                                                                   | number                                                                                                                   |
 | autoLastmod (optional)                              | Add `<lastmod/>` property. Default `true`                                                                                                                                                                                                                                                                                                                                                                                            | true                                                                                                                     |
-| exclude (optional)                                  | Array of **relative** paths ([wildcard pattern supported](https://www.npmjs.com/package/matcher#usage)) to exclude from listing on `sitemap.xml` or `sitemap-*.xml`. e.g.: `['/page-0', '/page-*', '/private/*']`. <br></br>Apart from this option `next-sitemap` also offers a custom `transform` option which could be used to exclude urls that match specific patterns                                                           | string[]                                                                                                                 |
+| exclude (optional)                                  | Array of **relative** paths ([wildcard pattern supported](https://www.npmjs.com/package/matcher#usage)) to exclude from listing on `sitemap.xml` or `sitemap-*.xml`. e.g.: `['/page-0', '/page-*', '/private/*']`. <br></br>Apart from this option `next-sitemap-x` also offers a custom `transform` option which could be used to exclude urls that match specific patterns                                                           | string[]                                                                                                                 |
 | sourceDir (optional)                                | next.js build directory. Default `.next`                                                                                                                                                                                                                                                                                                                                                                                             | string                                                                                                                   |
 | outDir (optional)                                   | All the generated files will be exported to this directory. Default `public`                                                                                                                                                                                                                                                                                                                                                         | string                                                                                                                   |
 | transform (optional)                                | A transformation function, which runs **for each** `relative-path` in the sitemap. Returning `null` value from the transformation function will result in the exclusion of that specific `path` from the generated sitemap list.                                                                                                                                                                                                     | async function                                                                                                           |
 | additionalPaths (optional)                          | Async function that returns a list of additional paths to be added to the generated sitemap list.                                                                                                                                                                                                                                                                                                                                    | async function                                                                                                           |
 | generateIndexSitemap                                | Generate index sitemaps. Default `true`                                                                                                                                                                                                                                                                                                                                                                                              | boolean                                                                                                                  |
 | generateRobotsTxt (optional)                        | Generate a `robots.txt` file and list the generated sitemaps. Default `false`                                                                                                                                                                                                                                                                                                                                                        | boolean                                                                                                                  |
-| robotsTxtOptions.transformRobotsTxt (optional)      | Custom robots.txt transformer function. (Example: [custom-robots-txt-transformer](https://github.com/iamvishnusankar/next-sitemap/tree/master/examples/custom-robots-txt-transformer)) <br/><br/> Default: `async(config, robotsTxt)=> robotsTxt`                                                                                                                                                                                    | async function                                                                                                           |
-| robotsTxtOptions.policies (optional)                | Policies for generating `robots.txt`.<br/><br/> Default: <br/>`[{ userAgent: '*', allow: '/' }]`                                                                                                                                                                                                                                                                                                                                     | [IRobotPolicy[]](https://github.com/iamvishnusankar/next-sitemap/blob/master/packages/next-sitemap/src/interface.ts#L14) |
+| robotsTxtOptions.transformRobotsTxt (optional)      | Custom robots.txt transformer function. (Example: [custom-robots-txt-transformer](https://github.com/ariesclark/next-sitemap-x/tree/master/examples/custom-robots-txt-transformer)) <br/><br/> Default: `async(config, robotsTxt)=> robotsTxt`                                                                                                                                                                                    | async function                                                                                                           |
+| robotsTxtOptions.policies (optional)                | Policies for generating `robots.txt`.<br/><br/> Default: <br/>`[{ userAgent: '*', allow: '/' }]`                                                                                                                                                                                                                                                                                                                                     | [IRobotPolicy[]](https://github.com/ariesclark/next-sitemap-x/blob/master/packages/next-sitemap-x/src/interface.ts#L14) |
 | robotsTxtOptions.additionalSitemaps (optional)      | Options to add additional sitemaps to `robots.txt` host entry                                                                                                                                                                                                                                                                                                                                                                        | string[]                                                                                                                 |
 | robotsTxtOptions.includeNonIndexSitemaps (optional) | From v2.4x onwards, generated `robots.txt` will only contain url of `index sitemap` and custom provided endpoints from `robotsTxtOptions.additionalSitemaps`. <br/> <br/> This is to prevent duplicate url submission (once through index-sitemap -> sitemap-url and once through robots.txt -> HOST) <br/><br/>Set this option `true` to add all generated sitemap endpoints to `robots.txt`<br><br/> Default `false` (Recommended) | boolean                                                                                                                  |
 
@@ -133,7 +133,7 @@ Custom transformation provides an extension method to add, remove or exclude `pa
 Returning `null` value from the transformation function will result in the exclusion of that specific `relative-path` from the generated sitemap list.
 
 ```jsx
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   transform: async (config, path) => {
     // custom function to ignore the path
@@ -170,7 +170,7 @@ module.exports = {
 If your function returns a path that already exists, then it will simply be updated, duplication will not happen.
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   additionalPaths: async (config) => {
     const result = []
@@ -218,7 +218,7 @@ the output. This example will add an image and news tag to each entry but IRL yo
 some condition or within `additionalPaths` result.
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 const config = {
   transform: async (config, path) => {
     return {
@@ -242,10 +242,10 @@ export default config
 
 ## Full configuration example
 
-Here's an example `next-sitemap.config.js` configuration with all options
+Here's an example `next-sitemap-x.config.js` configuration with all options
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 
 module.exports = {
   siteUrl: 'https://example.com',
@@ -330,7 +330,7 @@ Sitemap: https://example.com/my-custom-sitemap-3.xml
 
 ## Generating dynamic/server-side sitemaps
 
-`next-sitemap` now provides two APIs to generate server side sitemaps. This will help to dynamically generate `index-sitemap`(s) and `sitemap`(s) by sourcing data from CMS or custom source.
+`next-sitemap-x` now provides two APIs to generate server side sitemaps. This will help to dynamically generate `index-sitemap`(s) and `sitemap`(s) by sourcing data from CMS or custom source.
 
 - `getServerSideSitemapIndex`: Generates index sitemaps based on urls provided and returns `application/xml` response. Supports next13+ route.{ts,js} file.
 
@@ -350,7 +350,7 @@ Create `app/server-sitemap-index.xml/route.ts` file.
 
 ```ts
 // app/server-sitemap-index.xml/route.ts
-import { getServerSideSitemapIndex } from 'next-sitemap'
+import { getServerSideSitemapIndex } from 'next-sitemap-x'
 
 export async function GET(request: Request) {
   // Method to source urls from cms
@@ -372,7 +372,7 @@ Create `pages/server-sitemap-index.xml/index.tsx` file.
 
 ```ts
 // pages/server-sitemap-index.xml/index.tsx
-import { getServerSideSitemapIndexLegacy } from 'next-sitemap'
+import { getServerSideSitemapIndexLegacy } from 'next-sitemap-x'
 import { GetServerSideProps } from 'next'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
@@ -398,9 +398,9 @@ Now, `next.js` is serving the dynamic index-sitemap from `http://localhost:3000/
 List the dynamic sitemap page in `robotsTxtOptions.additionalSitemaps` and exclude this path from static sitemap list.
 
 ```js
-// next-sitemap.config.js
+// next-sitemap-x.config.js
 
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: 'https://example.com',
   generateRobotsTxt: true,
@@ -413,7 +413,7 @@ module.exports = {
 }
 ```
 
-In this way, `next-sitemap` will manage the sitemaps for all your static pages and your dynamic `index-sitemap` will be listed on robots.txt.
+In this way, `next-sitemap-x` will manage the sitemaps for all your static pages and your dynamic `index-sitemap` will be listed on robots.txt.
 
 ---
 
@@ -428,7 +428,7 @@ Create `app/server-sitemap.xml/route.ts` file.
 
 ```ts
 // app/server-sitemap.xml/route.ts
-import { getServerSideSitemap } from 'next-sitemap'
+import { getServerSideSitemap } from 'next-sitemap-x'
 
 export async function GET(request: Request) {
   // Method to source urls from cms
@@ -460,7 +460,7 @@ Create `pages/server-sitemap.xml/index.tsx` file.
 
 ```ts
 // pages/server-sitemap.xml/index.tsx
-import { getServerSideSitemapLegacy } from 'next-sitemap'
+import { getServerSideSitemapLegacy } from 'next-sitemap-x'
 import { GetServerSideProps } from 'next'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
@@ -496,9 +496,9 @@ Now, `next.js` is serving the dynamic sitemap from `http://localhost:3000/server
 List the dynamic sitemap page in `robotsTxtOptions.additionalSitemaps` and exclude this path from static sitemap list.
 
 ```js
-// next-sitemap.config.js
+// next-sitemap-x.config.js
 
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: 'https://example.com',
   generateRobotsTxt: true,
@@ -511,14 +511,14 @@ module.exports = {
 }
 ```
 
-In this way, `next-sitemap` will manage the sitemaps for all your static pages and your dynamic sitemap will be listed on robots.txt.
+In this way, `next-sitemap-x` will manage the sitemaps for all your static pages and your dynamic sitemap will be listed on robots.txt.
 
 ## Typescript JSDoc
 
-Add the following line of code in your `next-sitemap.config.js` for nice typescript autocomplete! 💖
+Add the following line of code in your `next-sitemap-x.config.js` for nice typescript autocomplete! 💖
 
 ```js
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   // YOUR CONFIG
 }

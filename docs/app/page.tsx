@@ -9,7 +9,7 @@ import { Button } from './components/blocks/Button'
 async function getGitHubStars(): Promise<string | null> {
   try {
     const response = await fetch(
-      'https://api.github.com/repos/iamvishnusankar/next-sitemap',
+      'https://api.github.com/repos/ariesclark/next-sitemap-x',
       {
         headers: {
           Accept: 'application/vnd.github+json',
@@ -86,7 +86,7 @@ export default async function Home() {
                 Explore Documentation <Icons.ArrowRight className="h-4" />
               </Button>
             </Link>
-            <CodeCopyButton>yarn add next-sitemap </CodeCopyButton>
+            <CodeCopyButton>pnpm add next-sitemap-x </CodeCopyButton>
           </div>
         </div>
       </main>

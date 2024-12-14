@@ -5,7 +5,7 @@ const SocialIcons = () => {
         {' '}
         <a
           aria-label="Github Repo link"
-          href="https://github.com/iamvishnusankar/next-sitemap"
+          href="https://github.com/ariesclark/next-sitemap-x"
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 pt-[6px] transition-all text-slate-950 hover:text-slate-900 dark:rotate-0 dark:scale-100 dark:text-slate-400 dark:hover:text-slate-100"
@@ -28,7 +28,7 @@ const SocialIcons = () => {
         </a>
         <a
           aria-label="npm package page link"
-          href="https://www.npmjs.com/package/next-sitemap"
+          href="https://www.npmjs.com/package/next-sitemap-x"
           target="_blank"
           rel="noopener noreferrer"
           className="px-3 pt-[4px] transition-all text-slate-950 hover:text-slate-900 dark:rotate-0 dark:scale-100 dark:text-slate-400 dark:hover:text-slate-100"

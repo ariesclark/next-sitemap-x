@@ -2,7 +2,7 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/next-sitemap"
+      "path": "./packages/next-sitemap-x"
     }
   ]
 }

@@ -12,7 +12,7 @@ export class CLI {
    * @returns
    */
   async main() {
-    // Load config from `next-sitemap.config.js` along with runtimePaths info
+    // Load config from `next-sitemap-x.config.js` along with runtimePaths info
     const configParser = new ConfigParser()
     const { config, runtimePaths } = await configParser.loadConfig()
 

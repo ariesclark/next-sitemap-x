@@ -6,7 +6,7 @@ const Footer = () => {
           <p className="px-2 ">
             Created by:&nbsp;
             <a
-              href="https://github.com/iamvishnusankar/next-sitemap/graphs/contributors"
+              href="https://github.com/ariesclark/next-sitemap-x/graphs/contributors"
               target="_blank"
               className="hover:underline hover:cursor-pointer"
               rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center  md:flex-row mb:4">
           <a
-            href="https://github.com/iamvishnusankar/next-sitemap/tree/master/docs"
+            href="https://github.com/ariesclark/next-sitemap-x/tree/master/docs"
             target="_blank"
             className="text-slate-400 hover:underline hover:cursor-pointer hover:text-neutral-200"
             rel="noopener noreferrer"

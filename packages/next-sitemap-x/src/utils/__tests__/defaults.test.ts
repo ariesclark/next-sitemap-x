@@ -8,7 +8,7 @@ import {
   withDefaultConfig,
 } from '../defaults.js'
 
-describe('next-sitemap/defaults', () => {
+describe('next-sitemap-x/defaults', () => {
   test('defaultConfig', () => {
     expect(defaultConfig).toStrictEqual<Partial<IConfig>>({
       sourceDir: '.next',

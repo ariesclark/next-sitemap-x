@@ -24,7 +24,7 @@ const Hero = () => {
             <Button className="max-md:mb-10">
               Explore Documentation <Icons.ArrowRight className="h-4" />
             </Button>
-            <CodeCopyButton>yarn add next-sitemap</CodeCopyButton>
+            <CodeCopyButton>pnpm add next-sitemap-x</CodeCopyButton>
           </div>
         </div>
       </main>

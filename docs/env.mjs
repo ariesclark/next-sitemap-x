@@ -13,6 +13,6 @@ export const env = createEnv({
   runtimeEnv: {
     NEXT_PUBLIC_APP_URL:
       process.env.NEXT_PUBLIC_APP_URL ??
-      'https://next-sitemap.iamvishnusankar.com',
+      'https://next-sitemap-x.ariesclark.com',
   },
 })

@@ -10,7 +10,7 @@ Transform function runs **for each** `relative path` in the sitemap. And use the
 Returning `null` value from the transformation function will result in the exclusion of that specific `relative-path` from the generated sitemap list.
 
 ```jsx
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   transform: async (config, path) => {
     // custom function to ignore the path

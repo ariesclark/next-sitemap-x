@@ -7,7 +7,7 @@ import { Toaster } from '@/app/components/ui/Toaster'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'next-sitemap',
+  title: 'next-sitemap-x',
   description: 'Sitemap generator for Next.js application.',
   metadataBase: new URL(siteConfig.url),
   openGraph: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [`/og.jpg`],
-    creator: '@iamvishnusankar',
+    creator: '@ariesclark',
   },
 }
 

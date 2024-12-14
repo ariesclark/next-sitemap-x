@@ -3,8 +3,8 @@ import Card from '../components/cards/card'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'next-sitemap - Examples',
-  description: 'Examples where next-sitemap has been utilized.',
+  title: 'next-sitemap-x - Examples',
+  description: 'Examples where next-sitemap-x has been utilized.',
   alternates: { canonical: '/examples' },
   openGraph: {
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: siteExampleConfig.name,
     description: siteExampleConfig.description,
     images: [`/examples.jpg`],
-    creator: '@iamvishnusankar',
+    creator: '@ariesclark',
   },
 }
 
@@ -36,7 +36,7 @@ const page = () => {
             Find your Example
           </h1>
           <h2 className="mx-[1vw] text-base md:text-xl text-gray-600 font-ranadeMedium">
-            List of examples where next-sitemap has been used.
+            List of examples where next-sitemap-x has been used.
           </h2>
         </div>
         <div className="mt-5 grid gap-4 sm:grid-cols-1 md:gap-2 md:grid-cols-2 lg:grid-cols-3 ">

@@ -1,4 +1,4 @@
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 const config = {
   siteUrl: 'https://example.com',
   generateRobotsTxt: true,

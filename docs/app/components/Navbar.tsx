@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto w-full flex justify-between items-center font-satoshiBold">
         <div>
           <Link href="/" className={buttonVariants({ variant: 'link' })}>
-            next-sitemap
+            next-sitemap-x
           </Link>
 
           <Link href="/docs" className={buttonVariants({ variant: 'link' })}>

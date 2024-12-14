@@ -38,7 +38,7 @@ export class SitemapBuilder {
   /**
    * Normalize sitemap field keys to stay consistent with <xsd:sequence> order
    * @link https://www.w3schools.com/xml/el_sequence.asp
-   * @link https://github.com/iamvishnusankar/next-sitemap/issues/345
+   * @link https://github.com/ariesclark/next-sitemap-x/issues/345
    * @param x
    * @returns
    */

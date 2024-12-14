@@ -1,4 +1,4 @@
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 import { asciiArt } from './art.js'
 
 const config = {

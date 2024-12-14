@@ -1,5 +1,5 @@
 {
-  "name": "next-sitemap",
+  "name": "next-sitemap-x",
   "version": "1.0.0",
   "description": "Sitemap generator for next.js",
   "type": "module",
@@ -16,10 +16,10 @@
     "dist",
     "bin"
   ],
-  "repository": "https://github.com/iamvishnusankar/next-sitemap.git",
+  "repository": "https://github.com/ariesclark/next-sitemap-x.git",
   "funding": [
     {
-      "url": "https://github.com/iamvishnusankar/next-sitemap.git"
+      "url": "https://github.com/ariesclark/next-sitemap-x.git"
     }
   ],
   "engines": {
@@ -32,12 +32,18 @@
     "seo",
     "react"
   ],
-  "author": {
-    "name": "Vishnu Sankar",
-    "url": "https://www.iamvishnusankar.com"
-  },
+  "contributors": [
+    {
+      "name": "Aries Clark",
+      "url": "https://ariesclark.com"
+    },
+    {
+      "name": "Vishnu Sankar",
+      "url": "https://github.com/iamvishnusankar"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/iamvishnusankar/next-sitemap/issues"
+    "url": "https://github.com/ariesclark/next-sitemap-x/issues"
   },
   "license": "MIT",
   "sideEffects": false,
@@ -45,8 +51,8 @@
     "access": "public"
   },
   "bin": {
-    "next-sitemap": "./bin/next-sitemap.mjs",
-    "next-sitemap-cjs": "./bin/next-sitemap.cjs"
+    "next-sitemap-x": "./bin/next-sitemap-x.mjs",
+    "next-sitemap-x-cjs": "./bin/next-sitemap-x.cjs"
   },
   "scripts": {
     "build": "tsc && tsc --module commonjs --outDir dist/cjs",
@@ -62,6 +68,9 @@
     "next": "*"
   },
   "devDependencies": {
+    "@corex/tsconfig": "^4.0.43",
+    "@types/bun": "^1.1.14",
+    "@types/node": "^22.10.2",
     "typescript": "^5.2.2"
   }
 }

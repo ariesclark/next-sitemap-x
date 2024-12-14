@@ -46,7 +46,7 @@ export class ConfigParser {
     // Runtime configs
     const runtimeConfig = await this.getRuntimeConfig(config, runtimePaths)
 
-    // Prioritize `trailingSlash` value from `next-sitemap.js`
+    // Prioritize `trailingSlash` value from `next-sitemap-x.js`
     const trailingSlashConfig: Partial<IConfig> = {}
     if ('trailingSlash' in config) {
       trailingSlashConfig.trailingSlash = config?.trailingSlash
@@ -56,7 +56,7 @@ export class ConfigParser {
   }
 
   /**
-   * Load next-sitemap.config.js as module
+   * Load next-sitemap-x.config.js as module
    * @returns
    */
   private async loadBaseConfig(): Promise<IConfig> {
@@ -64,13 +64,13 @@ export class ConfigParser {
     const path = await getConfigFilePath()
 
     // Config loading message
-    Logger.log('✨', `Loading next-sitemap config:`, path)
+    Logger.log('✨', `Loading next-sitemap-x config:`, path)
 
     // Load base config
     const baseConfig = await import(path)
 
     if (!baseConfig.default) {
-      throw new Error('Unable to next-sitemap config file')
+      throw new Error('Unable to next-sitemap-x config file')
     }
 
     return withDefaultConfig(baseConfig.default)

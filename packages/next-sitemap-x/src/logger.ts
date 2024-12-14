@@ -27,7 +27,7 @@ export class Logger {
    */
   static noConfigFile() {
     Logger.error(
-      'Unable to find next-sitemap.config.js or custom config file.\n\nIMPORTANT: Default config file has been renamed to `next-sitemap.config.js`\n\nIf you are using custom config file, make sure to invoke `next-sitemap --config <custom-config-file>.js`\n',
+      'Unable to find next-sitemap-x.config.js or custom config file.\n\nIMPORTANT: Default config file has been renamed to `next-sitemap-x.config.js`\n\nIf you are using custom config file, make sure to invoke `next-sitemap-x --config <custom-config-file>.js`\n',
     )
   }
 
@@ -37,7 +37,7 @@ export class Logger {
    * @returns
    */
   static error(...text: string[]) {
-    return console.error(`\x1b[31m`, `❌`, `[next-sitemap]`, ...text)
+    return console.error(`\x1b[31m`, `❌`, `[next-sitemap-x]`, ...text)
   }
 
   /**
@@ -46,7 +46,7 @@ export class Logger {
    * @param text
    */
   static log(emoji: string, ...text: string[]): any {
-    return console.log(emoji, `[next-sitemap]`, ...text)
+    return console.log(emoji, `[next-sitemap-x]`, ...text)
   }
 
   static logList(title: string, list: string[]) {

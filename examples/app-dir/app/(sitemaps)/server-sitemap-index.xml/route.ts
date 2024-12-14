@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { getServerSideSitemapIndex } from 'next-sitemap'
+import { getServerSideSitemapIndex } from 'next-sitemap-x'
 
 export async function GET(request: Request) {
   // Method to source urls from cms

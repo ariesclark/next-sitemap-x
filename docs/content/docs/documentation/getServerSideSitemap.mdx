@@ -9,7 +9,7 @@ Create `app/server-sitemap.xml/route.ts` file.
 
 ```ts
 // app/server-sitemap.xml/route.ts
-import { getServerSideSitemap } from 'next-sitemap'
+import { getServerSideSitemap } from 'next-sitemap-x'
 
 export async function GET(request: Request) {
   // Method to source urls from cms
@@ -38,7 +38,7 @@ Create `pages/server-sitemap.xml/index.tsx` file.
 
 ```ts
 // pages/server-sitemap.xml/index.tsx
-import { getServerSideSitemapLegacy } from 'next-sitemap'
+import { getServerSideSitemapLegacy } from 'next-sitemap-x'
 import { GetServerSideProps } from 'next'
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
@@ -72,9 +72,9 @@ Now, `next.js` is serving the dynamic sitemap from `http://localhost:3000/server
 List the dynamic sitemap page in `robotsTxtOptions.additionalSitemaps` and exclude this path from static sitemap list.
 
 ```js
-// next-sitemap.config.js
+// next-sitemap-x.config.js
 
-/** @type {import('next-sitemap').IConfig} */
+/** @type {import('next-sitemap-x').IConfig} */
 module.exports = {
   siteUrl: 'https://example.com',
   generateRobotsTxt: true,
@@ -87,4 +87,4 @@ module.exports = {
 }
 ```
 
-In this way, `next-sitemap` will manage the sitemaps for all your static pages and your dynamic sitemap will be listed on robots.txt.
+In this way, `next-sitemap-x` will manage the sitemaps for all your static pages and your dynamic sitemap will be listed on robots.txt.
