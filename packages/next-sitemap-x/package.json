@@ -55,6 +55,7 @@
     "next-sitemap-x-cjs": "./bin/next-sitemap-x.cjs"
   },
   "scripts": {
+    "release": "pnpm build && cp ../../README.md ./README.md && pnpm publish",
     "build": "tsc && tsc --module commonjs --outDir dist/cjs",
     "postbuild": "tsc --module commonjs --outDir dist/cjs"
   },
